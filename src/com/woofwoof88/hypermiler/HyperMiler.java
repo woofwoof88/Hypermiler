@@ -24,9 +24,12 @@ import android.widget.TextView;
 
 public class HyperMiler extends Activity {
     private static final String PUBLISHER_ID= "a14d88c82f8d1af";
-    private static final double LITRE_GALLON =  0.219969157;
-    private static final double GALLONS_LITRES = 4.54609188;
-    private static final double MILE_KILOMETERS = 0.621371192;
+    @SuppressWarnings("unused")
+	private static final double LITRE_GALLON =  0.219969157;
+    @SuppressWarnings("unused")
+	private static final double GALLONS_LITRES = 4.54609188;
+    @SuppressWarnings("unused")
+	private static final double MILE_KILOMETERS = 0.621371192;
     private static final double US_CONVERTER = 1.200949857;
 
 	/** Called when the activity is first created. */
@@ -160,6 +163,7 @@ public class HyperMiler extends Activity {
 	public static boolean isNumeric(String str )
 	{
 		try {
+			@SuppressWarnings("unused")
 			double d = Double.parseDouble(str);
 		} catch (Exception e) {
 			return false;

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout 
-	xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+	android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" android:background="@drawable/calc_screen_no_text">
+    android:layout_height="fill_parent" android:background="@drawable/calc_screen_no_text" xmlns:android="http://schemas.android.com/apk/res/android">
     <RelativeLayout android:layout_width="fill_parent"
     	android:orientation="vertical" 
     	android:id="@+id/screenLayout" android:layout_height="wrap_content">
@@ -48,71 +47,99 @@
 		        android:weightSum="2"
 		        android:layout_margin="5dp"
 		        >
+
 		        <TextView
+		            android:layout_width="120dp"
 		            android:layout_height="wrap_content"
 		            android:layout_gravity="right|center_vertical"
 		            android:layout_weight="1"
-		            android:textStyle="bold"
-		            android:textSize="16sp"
 		            android:gravity="right"
-		            android:textColor="@android:color/black" android:text="Distance Covered:" android:layout_width="120dp"/>
+		            android:text="@string/DISTANCE_COVERED"
+		            android:textColor="@android:color/black"
+		            android:textSize="16sp"
+		            android:textStyle="bold" />
+
 		        <View android:layout_height="1dp" android:layout_width="40dp"/>
+
 		        <EditText
-		        	android:id="@+id/DistanceCovered"
+		            android:id="@+id/DistanceCovered"
 		            android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
 		            android:layout_gravity="right"
 		            android:layout_weight="1"
-		            android:imeOptions="actionNext" android:paddingRight="5dp"
-		            android:hint="................." android:gravity="right|center_vertical" android:inputType="text|number" android:background="#c5c5c5"/>
+		            android:background="#c5c5c5"
+		            android:gravity="right|center_vertical"
+		            android:hint="@string/DOTS"
+		            android:imeOptions="actionNext"
+		            android:inputType="text|number"
+		            android:paddingRight="5dp" />
+
 	        </TableRow>
 		    <TableRow
 		        android:layout_height="wrap_content"
 		        android:weightSum="2"
 		        android:layout_margin="5dp"
 		        >
+
 		        <TextView
 		            android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
 		            android:layout_gravity="right|center_vertical"
 		            android:layout_weight="1"
-		            android:textStyle="bold"
-		            android:textSize="16sp"
 		            android:gravity="right"
-		            android:textColor="@android:color/black" android:text="Litres of fuel used:"/>
+		            android:text="@string/LITRES_USED"
+		            android:textColor="@android:color/black"
+		            android:textSize="16sp"
+		            android:textStyle="bold" />
+
 		        <View android:id="@+id/view1" android:layout_width="20dp" android:layout_height="1dp"></View>
+
 		        <EditText
-		        	android:id="@+id/LitresFuelUsed"
+		            android:id="@+id/LitresFuelUsed"
 		            android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
 		            android:layout_gravity="right"
 		            android:layout_weight="1"
-		            android:paddingRight="5dp"
-		            android:hint="................." android:gravity="right|center_vertical" android:inputType="text|number" android:background="#c5c5c5" android:imeOptions="actionGo"/>
+		            android:background="#c5c5c5"
+		            android:gravity="right|center_vertical"
+		            android:hint="@string/DOTS"
+		            android:imeOptions="actionGo"
+		            android:inputType="text|number"
+		            android:paddingRight="5dp" />
+
 		    </TableRow>
 		    <TableRow
 		        android:layout_height="wrap_content"
 		        android:weightSum="2"
 		        android:layout_margin="5dp"
 		        >
+
 		        <TextView
 		            android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
 		            android:layout_gravity="right|center_vertical"
 		            android:layout_weight="1"
-		            android:textStyle="bold"
-		            android:textSize="16sp"
 		            android:gravity="right"
-		            android:textColor="@android:color/black" android:text="Cost per litre (pence)"/>
+		            android:text="@string/COST_PER_LITRE"
+		            android:textColor="@android:color/black"
+		            android:textSize="16sp"
+		            android:textStyle="bold" />
+
 		        <View android:layout_height="1dp" android:id="@+id/View01" android:layout_width="20dp"></View>
+
 		        <EditText
-		        	android:id="@+id/CostPerLitre"
+		            android:id="@+id/CostPerLitre"
 		            android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
 		            android:layout_gravity="right"
 		            android:layout_weight="1"
-		            android:paddingRight="5dp"
-		            android:hint="................." android:gravity="right|center_vertical" android:imeOptions="actionGo" android:inputType="text|number" android:background="#c5c5c5"/>
+		            android:background="#c5c5c5"
+		            android:gravity="right|center_vertical"
+		            android:hint="@string/DOTS"
+		            android:imeOptions="actionGo"
+		            android:inputType="text|number"
+		            android:paddingRight="5dp" />
+
 		    </TableRow>
 
 
@@ -121,28 +148,45 @@
 		        android:weightSum="2"
 		        android:layout_margin="5dp"
 		        >
-		        <Button android:id="@+id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="32dp" android:layout_gravity="center_horizontal" android:text="Reset"></Button>
+
+		        <Button
+		            android:id="@+id/button1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_horizontal"
+		            android:text="@string/RESET"
+		            android:textSize="32dp" >
+</Button>
 		    </TableRow>
 		    <TableRow
 		        android:layout_height="wrap_content"
 		        android:weightSum="2"
 		        android:layout_margin="5dp"
 		        >
+
 		        <TextView
 		            android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
 		            android:layout_gravity="right|center_vertical"
 		            android:layout_weight="1"
-		            android:textStyle="bold"
 		            android:gravity="right"
-		            android:textColor="@android:color/black" android:text="Your MPG is:" android:textSize="26sp"/>
-		        <View android:layout_height="1dp" android:id="@+id/View01" android:layout_width="20dp"></View>
+		            android:text="@string/YOUR_MPG"
+		            android:textColor="@android:color/black"
+		            android:textSize="26sp"
+		            android:textStyle="bold" />
+
+		        <View android:layout_height="1dp" android:id="@+id/View02" android:layout_width="20dp"></View>
+
 		        <TextView
-		        	android:id="@+id/MPG"
+		            android:id="@+id/MPG"
 		            android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
 		            android:layout_gravity="right"
-		            android:background="@android:color/transparent" android:gravity="left|center_vertical" android:textSize="20sp" android:text="................."/>
+		            android:background="@android:color/transparent"
+		            android:gravity="left|center_vertical"
+		            android:text="@string/DOTS"
+		            android:textSize="20sp" />
+
 		    </TableRow>
 		    <TableRow
 		        android:layout_height="wrap_content"
@@ -158,13 +202,18 @@
 		            android:textSize="16sp"
 		            android:gravity="right"
 		            android:textColor="@android:color/black" android:text="KM per litre:"/>
-		        <View android:layout_height="1dp" android:id="@+id/View01" android:layout_width="20dp"></View>
+		        <View android:layout_height="1dp" android:id="@+id/View03" android:layout_width="20dp"></View>
+
 		        <TextView
-		        	android:id="@+id/KMPerLitre"
+		            android:id="@+id/KMPerLitre"
 		            android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
 		            android:layout_gravity="right"
-		            android:background="@android:color/transparent" android:hint="................." android:inputType="none" android:gravity="right|center_vertical"/>
+		            android:background="@android:color/transparent"
+		            android:gravity="right|center_vertical"
+		            android:hint="@string/DOTS"
+		            android:inputType="none" />
+
 		    </TableRow>
 		    <TableRow
 		        android:layout_height="wrap_content"
@@ -180,13 +229,17 @@
 		            android:textSize="16sp"
 		            android:gravity="right"
 		            android:textColor="@android:color/black" android:text="Pence per mile:"/>
-		        <View android:layout_height="1dp" android:id="@+id/View01" android:layout_width="20dp"></View>
+		        <View android:layout_height="1dp" android:id="@+id/View04" android:layout_width="20dp"></View>
+
 		        <TextView
-		        	android:id="@+id/PencePerMile"
+		            android:id="@+id/PencePerMile"
 		            android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
 		            android:layout_gravity="right"
-		            android:background="@android:color/transparent" android:hint="................." android:gravity="right|center_vertical"/>
+		            android:background="@android:color/transparent"
+		            android:gravity="right|center_vertical"
+		            android:hint="@string/DOTS" />
+
 		    </TableRow>
 		    <TableRow
 		        android:layout_height="wrap_content"
@@ -202,13 +255,18 @@
 		            android:textSize="16sp"
 		            android:gravity="right"
 		            android:textColor="@android:color/black" android:text="US MPG:"/>
-		        <View android:layout_height="1dp" android:id="@+id/View01" android:layout_width="20dp"></View>
+		        <View android:layout_height="1dp" android:id="@+id/View05" android:layout_width="20dp"></View>
+
 		        <TextView
-		        	android:id="@+id/US_MPG"
+		            android:id="@+id/US_MPG"
 		            android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
 		            android:layout_gravity="right"
-		            android:background="@android:color/transparent" android:hint="................." android:editable="false" android:inputType="none" android:gravity="right|center_vertical"/>
+		            android:background="@android:color/transparent"
+		            android:gravity="right|center_vertical"
+		            android:hint="@string/DOTS"
+		            android:inputType="none" />
+
 		    </TableRow>
 		
 		</TableLayout>

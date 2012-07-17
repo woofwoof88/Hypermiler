@@ -2,4 +2,10 @@
 <resources>
     <string name="hello">Hello World, HyperMiler!</string>
     <string name="app_name">HyperMiler</string>
+    <string name="DISTANCE_COVERED" >Distance Covered:</string>
+    <string name="LITRES_USED">Litres of fuel used:</string>
+    <string name="COST_PER_LITRE">Cost per litre (pence)</string>
+    <string name="DOTS">.................</string>
+    <string name="RESET">Reset</string>
+    <string name="YOUR_MPG">Your MPG is:</string>
 </resources>
